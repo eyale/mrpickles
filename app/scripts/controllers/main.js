@@ -1,14 +1,12 @@
-(function () {
-	'use strict';
+(function() {
+    'use strict';
 
-	angular
-		.module('mrpicklesApp')
-		.controller('MainCtrl', MainCtrl);
+    angular
+        .module('mrApp')
+        .controller('MainCtrl', MainCtrl);
+        .controller('MainCtrl', function($scope, localStorageService){});
+    MainCtrl.$inject = ['$scope'];
 
-	MainCtrl.$inject = ['$scope'];
-
-	function MainCtrl($scope) {
-
-	}
+    function MainCtrl($scope) {}
 
 })();

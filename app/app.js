@@ -9,11 +9,15 @@
  * Main module of the application.
  */
 angular
-  .module('mrpicklesApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngSanitize',
-    'ngTouch',
-    'ui.router'
-  ]);
+    .module('mrApp', [
+        'ngAnimate',
+        'ngCookies',
+        'ngResource',
+        'ngSanitize',
+        'ngTouch',
+        'ui.router',
+        'LocalStorageModule'
+    ])
+    .config(['localStorageServiceProvider', function(localStorageServiceProvider) {
+        localStorageServiceProvider.setPrefix('ls');
+    }]);
