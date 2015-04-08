@@ -37,6 +37,14 @@
 					}
 				}
 			})
+			.state('internal.settings.pipeline', {
+				url: '/pipeline',
+				views: {
+					'container@internal.settings': {
+						templateUrl: '/settings/pipeline.tpl.html'
+					}
+				}
+			})
 			;
 	}
 
