@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -13,55 +14,57 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-  </head>
-  <body ng-app="mrApp">
+</head>
+
+<body ng-app="mrApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <!-- Add your site or application content here -->
     <div class="container-fluid">
-      <div class="header">
-        <ul class="btn-xs nav nav-pills pull-right">
-         <li><a href="#" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" role="button">Dropdown <span class="glyphicon glyphicon-list"></span></a>
-          <ul class="nav nav-pills nav-stacked dropdown-menu" role="menu">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-          </ul>
-          <li><a ui-sref="internal.home">Home</a></li>
-          <li><a ui-sref="internal.settings">Settings</a></li>
-          <li><a ng-href="#">Contact</a></li>
-          </li>
-        </ul>
-        <h3 class="text-primary"><a ui-sref="internal.home">mrpickles</a></h3>
-      </div>
-
-      <div ui-view=""></div>
-
-
-      <div class="panel-footer">
-        <p></p>
-      </div>
+        <div class="header">
+            <ul class="btn-xs nav nav-pills pull-right">
+                <li><a href="#" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" role="button">Dropdown <span class="glyphicon glyphicon-list"></span></a>
+                    <ul class="nav nav-pills nav-stacked dropdown-menu" role="menu">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul>
+                    <li><a ui-sref="internal.home">Home <span class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a ui-sref="internal.settings">Settings <span class="glyphicon glyphicon-wrench"></span></a></li>
+                    <li><a ng-href="#">Contact <span class="glyphicon glyphicon-phone-alt"></span></a></li>
+                </li>
+            </ul>
+            <h3 class="text-primary"><a ui-sref="internal.home">mrpickles</a></h3>
+        </div>
+        <div class="panel panel-default">
+            <div ui-view="" class="panel-body"></div>
+            <div class="panel-footer"></div>
+        </div>
+        <div class="footer">
+        </div>
     </div>
-
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
     </script>
-
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -88,15 +91,14 @@
     <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-      <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="app.js"></script>
     <script src="app.routes.js"></script>
-
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
     <script src="settings/settings.module.js"></script>
     <script src="settings/pipeline.ctrl.js"></script>
     <!-- endbuild -->
 </body>
+
 </html>
