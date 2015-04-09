@@ -15,6 +15,5 @@ angular
         'ngResource',
         'ngSanitize',
         'ngTouch',
-        'ui.router',
-        'LocalStorageModule'
+        'ui.router'
     ])
