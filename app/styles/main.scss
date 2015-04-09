@@ -12,8 +12,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -26,7 +24,8 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  padding-top: 15px;
+  border-radius: 0 0 4px 4px;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {

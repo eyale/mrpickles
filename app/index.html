@@ -20,21 +20,28 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ui-sref="internal.home">Home</a></li>
+        <ul class="btn-xs nav nav-pills pull-right">
+         <li><a href="#" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" role="button">Dropdown <span class="glyphicon glyphicon-list"></span></a>
+          <ul class="nav nav-pills nav-stacked dropdown-menu" role="menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+          <li><a ui-sref="internal.home">Home</a></li>
           <li><a ui-sref="internal.settings">Settings</a></li>
           <li><a ng-href="#">Contact</a></li>
+          </li>
         </ul>
-        <h3 class="text-muted">mrpickles</h3>
+        <h3 class="text-primary"><a ui-sref="internal.home">mrpickles</a></h3>
       </div>
 
       <div ui-view=""></div>
 
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> non official Mr. Pickles app</p>
+        <p></p>
       </div>
     </div>
 

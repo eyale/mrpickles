@@ -4,9 +4,7 @@
     angular
         .module('mrApp')
         .config(appRouterConfig)
-        .config(['localStorageServiceProvider', function(localStorageServiceProvider) {
-            localStorageServiceProvider.setPrefix('ls');
-        }])
+       
     appRouterConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$uiViewScrollProvider'];
 
     function appRouterConfig($stateProvider, $urlRouterProvider, $uiViewScrollProvider) {
