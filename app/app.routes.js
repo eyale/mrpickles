@@ -4,7 +4,7 @@
     angular
         .module('mrApp')
         .config(appRouterConfig)
-       
+
     appRouterConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$uiViewScrollProvider'];
 
     function appRouterConfig($stateProvider, $urlRouterProvider, $uiViewScrollProvider) {
@@ -43,6 +43,14 @@
                     'container@internal.settings': {
                         templateUrl: '/settings/pipeline.tpl.html',
                         controller: 'PipelineSettingsCtrl as pipe'
+                    }
+                }
+            })
+            .state('internal.contact', {
+                url: '/contact',
+                views: {
+                    'container@internal': {
+                        templateUrl: 'layout/contact.html'
                     }
                 }
             });
