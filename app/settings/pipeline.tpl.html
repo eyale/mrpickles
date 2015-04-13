@@ -1,3 +1,22 @@
-<div class="col-md-2 btn btn-default btn-lg" ng-repeat="p in pipe.pipeline track by $index">
-    {{p.title}}
+
+<div class="row">
+    <div ng-click="pipe.select($index)" class="col-md-2 btn btn-default btn-lg" ng-repeat="p in pipe.pipeline track by $index">
+        {{p.title}}
+    </div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12" ng-init="newStageTitle = ''">
+		<input ng-model="newStageTitle"><a class="btn" ng-click="pipe.addStage(newStageTitle); newStageTitle = ''">Add</a>
+	</div>
+</div>
+
+<div class="row" ng-show="pipe.sel">
+    <div class="col-md-2">
+        <div class="input-group">
+            <input ng-model="pipe.pipeline[pipe.sel].title" class="form-control" type="text" placeholder="Enter the name">
+            <span class="input-group-btn"><button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-ok"></span></button>
+            </span>
+        </div>
+    </div>
 </div>
