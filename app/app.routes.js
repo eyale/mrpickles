@@ -53,6 +53,14 @@
                         templateUrl: 'layout/contact.html'
                     }
                 }
+            })
+            .state('internal.training',{
+                url:'/training',
+                views:{
+                    'container@internal':{
+                        templateUrl:'layout/training.html'
+                    }
+                }
             });
     }
 
