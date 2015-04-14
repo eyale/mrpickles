@@ -15,9 +15,5 @@ angular
         'ngResource',
         'ngSanitize',
         'ngTouch',
-        'ui.router',
-        'LocalStorageModule'
+        'ui.router'
     ])
-    .config(['localStorageServiceProvider', function(localStorageServiceProvider) {
-        localStorageServiceProvider.setPrefix('ls');
-    }])
