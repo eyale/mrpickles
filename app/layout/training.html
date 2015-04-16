@@ -1,12 +1,74 @@
+<!-- slider -->
+<div class="row">
+    <div class="carousel slide" data-ride="carousel">
+        <!-- indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-exemple-generic" data-slider-to="0" class="active"></li>
+            <li data-target="#carousel-exemple-generic" data-slider-to="1"></li>
+            <li data-target="#carousel-exemple-generic" data-slider-to="2"></li>
+        </ol>
+        <!-- wrapper for sliders -->
+        <div class="col-md-12">
+            <div id="caroesel-example-generic" class="carousel-inner" role="listbog">
+                <div class="item active">
+                    <img src="../images/bower.jpg" alt="bower">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="../images/bower.jpg" alt="jQuery">
+                    <div class="caroesel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="../images/bower.jpg" alt="bootstrap">
+                    <div class="caroesel-caption"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- where I should put my own script's? I think I should create file and link  this file in index.html (Is it right?) -->
+    <script>
+    $('.carousel').carousel({
+        interval: 3000
+    })
+    </script>
+</div>
+<!-- Some content here-->
 <div class="row">
     <div class="col-md-12">
-        <div class="col-md-2">
+        <div class="col-md-3">
             <img ng-src="../images/grunt-logo.png" height="50" width="50">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div class="col-md-4">This project have created by using tuskRunner Grunt</div>
-        <div class="col-md-2">
-            <img ng-src="../images/yeoman.png" height="50" width="50">
+        <div class="col-md-3">
+            <img ng-src="../images/grunt-logo.png" height="50" width="50">
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div class="col-md-4">and Yeoman</div>
+        <div class="col-md-3">
+            <img ng-src="../images/grunt-logo.png" height="50" width="50">
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-3">
+            <img ng-src="../images/grunt-logo.png" height="50" width="50">
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
 </div>
