@@ -3,14 +3,18 @@
     angular.module('mrApp')
         .controller('PipelineSettingsCtrl', PipelineSettingsCtrl);
 
-    PipelineSettingsCtrl.$inject = ['$scope'];
+    PipelineSettingsCtrl.$inject = ['$scope', '$firebaseArray'];
 
 
-    function PipelineSettingsCtrl($scope) {
+    function PipelineSettingsCtrl($scope, $firebaseArray) {
         var vm = this;
         vm.check = 'asd';
         vm.sel = null;
 
+        var ref = new Firebase('https://glaring-fire-4469.firebaseio.com/pipeline');
+        vm.pipeline = $firebaseArray(ref)
+
+        vm.addStage = addStage;
 
         vm.addStage = addStage;
         vm.selEl = selectEl;
@@ -19,7 +23,7 @@
         init();
 
         function addStage(title) {
-        	vm.pipeline.push({
+        	vm.pipeline.$add({
         		title: title
         	});
         }
@@ -30,19 +34,7 @@
 
 
         function init() {
-	        vm.pipeline = [{
-	            title: 'Pipe 1'
-	        }, {
-	            title: 'Pipe 2'
-	        }, {
-	            title: 'Pipe 3'
-	        }, {
-	            title: 'Pipe 4'
-	        }, {
-	            title: 'Pipe 5'
-	        }];        	
         }
-
     }
 
 })();
