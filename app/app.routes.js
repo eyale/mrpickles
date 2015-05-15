@@ -29,6 +29,14 @@
                     }
                 }
             })
+            .state('internal.deals', {
+                url: '/deals',
+                views: {
+                    'container@internal':{
+                        templateUrl:'/layout/deals.html'
+                    }
+                }
+            })
             .state('internal.settings', {
                 url: '/settings',
                 views: {
@@ -54,11 +62,11 @@
                     }
                 }
             })
-            .state('internal.training',{
-                url:'/training',
-                views:{
-                    'container@internal':{
-                        templateUrl:'layout/training.html'
+            .state('internal.training', {
+                url: '/training',
+                views: {
+                    'container@internal': {
+                        templateUrl: 'layout/training.html'
                     }
                 }
             });
