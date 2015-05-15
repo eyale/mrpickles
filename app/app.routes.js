@@ -33,7 +33,8 @@
                 url: '/deals',
                 views: {
                     'container@internal':{
-                        templateUrl:'/layout/deals.html'
+                        templateUrl:'/layout/deals.html',
+                        controller: 'DealsCtrl as deal'
                     }
                 }
             })
