@@ -32,8 +32,8 @@
             .state('internal.deals', {
                 url: '/deals',
                 views: {
-                    'container@internal':{
-                        templateUrl:'/layout/deals.html',
+                    'container@internal': {
+                        templateUrl: '/layout/deals.html',
                         controller: 'DealsCtrl as deal'
                     }
                 }
