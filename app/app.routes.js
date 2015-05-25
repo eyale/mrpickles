@@ -5,9 +5,9 @@
         .module('mrApp')
         .config(appRouterConfig)
 
-    appRouterConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$uiViewScrollProvider'];
+    appRouterConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$uiViewScrollProvider', '$locationProvider'];
 
-    function appRouterConfig($stateProvider, $urlRouterProvider, $uiViewScrollProvider) {
+    function appRouterConfig($stateProvider, $urlRouterProvider, $uiViewScrollProvider, $locationProvider) {
 
         $urlRouterProvider.otherwise('/');
 
@@ -34,7 +34,7 @@
                 views: {
                     'container@internal': {
                         templateUrl: '/layout/deals.html',
-                        controller: 'DealsCtrl as deal'
+                        controller: 'DealsCtrl as deals'
                     }
                 }
             })
