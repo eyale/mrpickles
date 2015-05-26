@@ -14,8 +14,7 @@
     "angular-touch": "1.2.16",
     "angular-ui-router": "~0.2.13",
     "firebase": "~2.2.4",
-    "angularfire": "~1.0.0",
-    "angular-strap": "~2.2.3"
+    "angularfire": "~1.0.0"
   },
   "devDependencies": {
     "angular-mocks": "1.2.16",

@@ -29,7 +29,7 @@
                     vm.personName = '';
                     vm.companyName = '';
                     vm.dealTitle = '';
-                    vm.dueDate = '';
+                    vm.dueDate = ''
                 });
             };
 

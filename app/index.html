@@ -23,12 +23,16 @@
     <!-- Add your site or application content here -->
     <div class="container-fluid">
         <div class="header">
+            <a ui-sref="internal.home"><img ng-src="images/PicklesHeader.png" height="59" width="248" /></a>
             <ul class="btn-xs nav nav-pills pull-right">
-                <li><a href="#" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="glyphicon glyphicon-list"></span></a>
+                <li><a href="#" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">USERNAME <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="nav nav-pills nav-stacked dropdown-menu" role="menu">
                         <li><a ui-sref="internal.training">Training</a></li>
+                        <li class="divider"></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Log out</a></li>
                     </ul>
                     <li><a ui-sref="internal.home">Home <span class="glyphicon glyphicon-home"></span></a></li>
                     <li><a ui-sref="internal.deals">Deals <span class="glyphicon glyphicon-cog"></span></a></li>
@@ -36,7 +40,6 @@
                     <li><a ui-sref="internal.contact">Contact <span class="glyphicon glyphicon-phone-alt"></span></a></li>
                 </li>
             </ul>
-            <a ui-sref="internal.home"><img ng-src="images/PicklesHeader.png" height="59" width="248" /></a>
         </div>
         <div class="panel panel-default">
             <div ui-view="" class="panel-body"></div>
@@ -88,8 +91,6 @@
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/firebase/firebase.js"></script>
     <script src="bower_components/angularfire/dist/angularfire.js"></script>
-    <script src="bower_components/angular-strap/dist/angular-strap.js"></script>
-    <script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
