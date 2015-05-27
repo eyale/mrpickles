@@ -22,7 +22,7 @@
 
         function getStages() {
             return $firebaseArray(
-                this.child('stages');
+                this.child('stages')
             );
         }
 

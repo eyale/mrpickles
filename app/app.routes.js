@@ -33,8 +33,17 @@
                 url: '/deals',
                 views: {
                     'container@internal': {
-                        templateUrl: '/layout/deals.html',
+                        templateUrl: '/deals/deals.html',
                         controller: 'DealsCtrl as deals'
+                    }
+                }
+            })
+            .state('internal.activities', {
+                url: '/activities',
+                views: {
+                    'container@internal': {
+                        templateUrl: 'activities/activities.html',
+                        controller: 'ActivitiesCtrl as Activities'
                     }
                 }
             })
