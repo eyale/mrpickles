@@ -21,9 +21,8 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Add your site or application content here -->
-    <div class="container-fluid">
-        <div class="header">
-            <a ui-sref="internal.home"><img ng-src="images/PicklesHeader.png" height="59" width="248" /></a>
+    <div class="navbar navbar-static-top">
+        <nav class="navbar navbar-inverse">
             <ul class="btn-xs nav nav-pills pull-right">
                 <li><a href="#" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">USERNAME <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="nav nav-pills nav-stacked dropdown-menu" role="menu">
@@ -41,12 +40,12 @@
                     <li><a ui-sref="internal.contact">Contact <span class="glyphicon glyphicon-phone-alt"></span></a></li>
                 </li>
             </ul>
-        </div>
-        <div class="panel panel-default">
+        </nav>
+    </div>
+    <div class="panel panel-default">
             <div ui-view="" class="panel-body"></div>
         </div>
-        <div class="footer"><p>footer</p> </div>
-    </div>
+    <div class="footer"><p>footer</p> </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
     (function(i, s, o, g, r, a, m) {
