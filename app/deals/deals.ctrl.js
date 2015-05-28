@@ -49,7 +49,7 @@
                 vm.isRemoveEl = false;
             };
         };
-
+//тут застрял
         vm.dragNdrop = dragNdrop;
 
         function dragNdrop() {
