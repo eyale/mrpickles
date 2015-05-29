@@ -10,8 +10,14 @@
 
     function DealsCtrl($scope, $firebaseArray) {
         var vm = this;
-        var ref = new Firebase('https://glaring-fire-4469.firebaseio.com/deals');
-        vm.deals = $firebaseArray(ref);
+
+        vm.deals = $firebaseArray(
+            new Firebase('https://glaring-fire-4469.firebaseio.com/deals')
+        );
+        
+        vm.pipeline = $firebaseArray(
+            new Firebase('https://glaring-fire-4469.firebaseio.com/pipeline')
+        );
 
         vm.addDeal = addDeal;
         vm.deleteDeal = deleteDeal;
@@ -21,18 +27,22 @@
             alert('here must be input');
         };
 
-        function addDeal() {
-            vm.deals.$add({
-                personName: vm.personName,
-                companyName: vm.companyName,
-                dealTitle: vm.dealTitle,
-                dueDate: vm.dueDate
-            }).then(function () {
-                vm.personName = '';
-                vm.companyName = '';
-                vm.dealTitle = '';
-                vm.dueDate = ''
-            });
+        function addDeal(addObj) {
+            addObj.dueDate = new Date().toString();
+            debugger;
+            vm.deals.$add(addObj).then(function () {
+                addObj = null;
+            });;
+
+            // vm.deals.$add({
+            //     personName: addObj.personName,
+            //     companyName: addObj.companyName,
+            //     dealTitle: addObj.dealTitle,
+            //     dueDate: addObj.dueDate,
+            //     stage: addObj.selected
+            // }).then(function () {
+            //     addObj = null;
+            // });
         };
 
         function deleteDeal(index) {

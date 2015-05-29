@@ -12,7 +12,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 body {}
 /* Everything but the jumbotron gets side spacing for mobile first views */
-
 .header,
 .marketing,
 .footer {
@@ -89,5 +88,20 @@ body {}
     
     .jumbotron {
         border-bottom: 0;
+    }
+}
+
+
+.deals-table {
+    width: 100%;
+    display: table;
+    table-layout: fixed; /* optional, for equal spacing */
+    border-collapse: collapse;
+
+    li {
+        display: table-cell;
+        text-align: center;
+        border: 1px solid pink;
+        vertical-align: middle;
     }
 }
